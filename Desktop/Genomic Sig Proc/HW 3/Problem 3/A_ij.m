@@ -11,7 +11,7 @@ for i = 1:num_row_array
     seq_array_not_i(i,:) = [];
     a_mat_minus_i = a_mat;
     a_mat_minus_i(i) = [];
-    Q = q_bk(seq_array_not_i, w, a_mat_minus_i);
+    Q = [q_bk(seq_array_not_i, w, a_mat_minus_i); 1 1 1 1 1 1 1 1 1 1];
     ith_seq = seq_array(i,:);
     denominator = PR_denominator(Q,Q_0, ith_seq, w, num_col_array);
     

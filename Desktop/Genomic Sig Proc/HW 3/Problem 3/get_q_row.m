@@ -13,7 +13,8 @@ elseif char == 'G'
 elseif char == 'T'
     row = 4;
 else
-    error('Not a valid character')
+    row = 5;
+    %error('Not a valid character')
     return
 end
 
