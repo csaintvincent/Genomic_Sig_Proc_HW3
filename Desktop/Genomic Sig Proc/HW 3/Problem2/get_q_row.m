@@ -1,6 +1,6 @@
 function [ row ] = get_q_row( char )
-%UNTITLED3 Summary of this function goes here
-%   Detailed explanation goes here
+%Assigns a row based on the input character. Row correspond to that of the
+%Q or Q_0 matrix assuming it goes ACGT
 
 if char == 'A'
     row = 1;

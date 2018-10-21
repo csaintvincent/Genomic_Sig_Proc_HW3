@@ -1,6 +1,5 @@
 function [ c ] = get_char( b )
-%UNTITLED7 Summary of this function goes here
-%   Detailed explanation goes here
+%Input a row b and return the row of the probability matrix Q or Q_0
 if b == 1
     c = 'A';
     return

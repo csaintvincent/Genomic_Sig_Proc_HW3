@@ -8,6 +8,7 @@ z = zeros(length(seq_array(:,1)),L);
 for i = 1:length(seq_array(:,1))
     
     % calculate our denominator here b/c it does not depend on j
+    
     den = denominator(Q, Q_0, seq_array(i,:), w);
     
     for j = 1:(L-w+1)
